@@ -9,38 +9,91 @@ body{
     align-items: center;
     height: 100vh;
 }
+
 h1{
     font-size: 4rem;
-    font-weight: 200;
+    font-weight: 50;
 }
 .calculator{
-    width: 20rem;
-    height: 40rem;
-    background-color: #002b4a;
+    width: 24rem;
+    height: 44rem;
     display: grid;
-    grid-template-rows: 15rem 1fr;
-    border-radius: 15px;
+    grid-template-rows: 17rem 1fr;
+    ;
 }
+
 .screen{
     background: #001e34;
-    border-radius: 15px;
+    border-radius: 1rem;
     display: flex;
     color: white;
     justify-content: end;
     align-items: end;
-    padding-bottom: 2rem;
     padding-right: 1rem;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    padding-bottom: 2rem;
 }
-.buttons-1{
+
+.buttons-wrap{
     display: grid;
+    grid-template-rows: 3fr 2fr;
 }
-.row-1{
+
+.row1{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.row2{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.line-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+.line-2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.row-2{
+.line-3{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+ .mainline{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.sideline{
+    display: grid;
+}
+.line-5{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+}
+.line-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+button{
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    cursor: pointer;
+    background:#002B4A;
+    border: 1px solid #001E34;
+}
+.zero{
+    border-bottom-left-radius: 1rem;
+}
+.equal{
+    border-bottom-right-radius: 1rem;
+}
+.cancel, .less, .equal{
+    color: rgb(4, 206, 4);
+}
+.times, .divide, .plus, .minus{
+    color: #8E82D8;
 }
